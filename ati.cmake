@@ -4,12 +4,12 @@
 # MemTotal: 16364536 kB
 # AMD Radeon HD 7800 Series
 set(CTEST_SITE "rocky.lbl.gov")
-set(CTEST_BUILD_NAME "Fedora19-ATI-RadeonHD-7870")
+set(CTEST_BUILD_NAME "Fedora19-gcc4.8.2-ATI-RadeonHD-7870")
 set(CTEST_CONFIGURATION_TYPE Debug)
 set(CTEST_CMAKE_GENERATOR "Ninja")
 set(CTEST_DASHBOARD_ROOT "/work/dashboards/vtk/ati")
 set(CMAKE_MAKE_PROGRAM "ninja-build")
-set(dashboard_model Exprimental)
+set(dashboard_model Nightly)
 set(dashboard_cache
 "CMAKE_CXX_COMPILER=/bin/g++
 CMAKE_C_COMPILER=/bin/gcc

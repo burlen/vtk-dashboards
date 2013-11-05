@@ -4,12 +4,12 @@
 # MemTotal: 16364536 kB
 # AMD Radeon HD 7800 Series
 set(CTEST_SITE "rocky.lbl.gov")
-set(CTEST_BUILD_NAME "Fedora19-OSMesa-llvmpipe-9.2.2")
+set(CTEST_BUILD_NAME "Fedora19-gcc4.8.2-OSMesa-llvmpipe-9.2.2")
 set(CTEST_CONFIGURATION_TYPE Debug)
 set(CTEST_CMAKE_GENERATOR "Ninja")
 set(CTEST_DASHBOARD_ROOT "/work/dashboards/vtk/osmesa-llvmpipe")
 set(CMAKE_MAKE_PROGRAM "ninja-build")
-set(dashboard_model Experimental)
+set(dashboard_model Nightly)
 set(MESA /work/apps/mesa/9.2.2/llvmpipe)
 #VTK_BUILD_ALL_MODULES=ON
 set(dashboard_cache

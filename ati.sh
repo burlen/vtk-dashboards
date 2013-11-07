@@ -1,5 +1,12 @@
 #/bin/bash -l
+DASHROOT=/work/dashboards/vtk
+cd $DASHROOT
+module load mpi/openmpi-x86_64
 export DISPLAY=:0.0
-export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib:$LD_LIBRRY_PATH
-export PATH=//usr/lib64/openmpi/bin:$PATH
-ctest -S /work/dashboards/vtk/ati.cmake --parallel 4 --timeout 35 --output-on-failure -O ati.log -V
+ctest \
+  -S ati.cmake \
+  --parallel 4 \
+  --timeout 35 \
+  --output-on-failure \
+  -O ati.log \
+  -V
